@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>{% block title %}PARTH{% endblock title %}</title>
 </head>
-<body class="bg-info">
+<style>
+  .bg-gradient-custom {
+    background: linear-gradient(135deg, #703b06, #147dd8ff);
+    min-height: 100vh; /* so gradient covers full viewport */
+  }
+</style>
+<body class="bg-gradient-custom">
    
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
@@ -101,7 +107,7 @@
     </footer>
     <!-- Footer End Section -->
     <div class="row bg-info py-3 text-light text-center w-100 m-0">
-        <span style="line-height: 50px;">Developed by <b class="text-dark">Shashvat Upadhyay</b> &copy; <a class="text-danger" href="https://www.youtube.com/" target="_blank">Youtube</a></span>
+        <span style="line-height:15px;">Developed by <b class="text-dark">Shashvat Upadhyay</b> &copy; <a class="text-danger" href="https://www.youtube.com/" target="_blank">Youtube</a></span>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
