@@ -1,24 +1,37 @@
-# Post
 
-A <brief this a is an social app to post images with its context.>.  
-Example: "Post is a simple blogging platform allowing users to create, read, update, and delete posts."
+You should replace with your actual folder & file names.
 
-## 🚀 Getting Started
+---
 
-Follow these steps to get the project running on your local machine.
+## 🛠️ Setup & Installation
 
 ### Prerequisites
 
-Make sure you have the following installed:
+ Python  
+ MySQLlite  
+.env` file with environment variables  
 
-- Python 3.x
-- Pip
-- Any other dependencies <like Flask, Django, etc.>
+### Installation Steps
 
-### Installation
+```bash
+# 1. Clone the repo
+git clone https://github.com/YourUserName/Post.git
 
-1. Clone the repository:
+cd Post
 
-   ```bash
-   git clone https://github.com/ShashvatUpadhyay/Post.git
-   cd Post
+# 2. Install dependencies
+npm install        # if Node
+# or
+pip install -r requirements.txt
+
+# 3. Create .env file
+cp .env.example .env
+# then edit .env to set DB credentials, API keys, etc.
+
+# 4. Run migrations / initialize database
+npm run migrate     # or equivalent
+
+# 5. Start the application
+npm start
+# or
+python manage.py runserver
